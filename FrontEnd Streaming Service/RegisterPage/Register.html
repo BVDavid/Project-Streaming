@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="CSsRegister.css">
+</head>
+<body>
+<div class="register-container">
+    <h2>Înregistrare</h2>
+    <form id="registerForm">
+        <div class="form-group">
+            <label for="firstName">Prenume</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Tastează prenume" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Nume</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Tastează nume" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Adresă de email</label>
+            <input type="email" id="email" name="email" placeholder="Tastează adresa de email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Număr de telefon</label>
+            <input type="tel" id="phone" name="phone" placeholder="Tastează număr de telefon" required>
+        </div>
+        <div class="form-group">
+            <label for="username">Nume de utilizator</label>
+            <input type="text" id="username" name="username" placeholder="Tastează nume de utilizator" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Parolă</label>
+            <input type="password" id="password" name="password" placeholder="Tastează parola" required>
+        </div>
+        <button type="submit" class="btn-submit">Înregistrează-te</button>
+        <div class="login-link">
+            Ai deja un cont? <a href="/login">Conectează-te</a>
+        </div>
+        <div id="message" class="error-message" style="display: none;"></div>
+    </form>
+</div>
+<script src="JsRegister.js"></script>
+</body>
+</html>
